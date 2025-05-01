@@ -17,16 +17,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/styles/styles.css" />
-    <link rel="stylesheet" href="./src/reset/reset.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <div class="logo">
-          <img src="./src/img/logo.svg" alt="Logo" />
+          <img class="logo-img" src="./src/img/logo-bw.svg" alt="Logo" />
         </div>
-        <a href="#" class="name">antools.</a>
+        <a href="#" class="logo-name">antools.</a>
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -49,308 +49,321 @@
               <a class="account-link" href="#">Login</a>
             </li>
             <li class="account-item">
-              <a class="account-link" href="#">Sign Up</a>
+              <a class="account-link signup-link" href="#">Sign Up</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <section class="awesometools">
-        <h2 class="awesometools-title">
-          Awesome tools for Designer & Developer
-          <span class="awesometools-titlespan">.</span>
-        </h2>
-        <p class="awesometools-subtitle">
-          Antool is a web collection of information on paid or free Design and
-          Development tools
-        </p>
-        <div class="awesometools-searchbar">
-          <form class="awesometools-form">
-            <input class="awesometools-searchinput" type="text" />
-            <button class="awesometools-searchbutton" type="submit"></button>
-          </form>
-        </div>
-        <div class="awesometools-picture">
-          <img
-            class="awesometools-img"
-            src="./src/img/awesometools-img.svg"
-            alt="illustration"
-          />
-        </div>
-      </section>
-      <section class="populartools">
-        <h2 class="populartools-maintitle">Most Popular Tools</h2>
-        <p class="populartools-mainsubtitle">
-          Tools for the best Designers and Developers most popularly used in the
-          world
-        </p>
-        <article class="populartools-article">
-          <div class="populartools-div">
+      <div class="container main-container">
+        <section class="awesometools">
+          <div class="awesometools-text">
+            <h2 class="awesometools-title">
+              Awesome tools for Designer & Developer<span
+                class="awesometools-titlespan"
+                >.</span
+              >
+            </h2>
+            <p class="awesometools-subtitle">
+              Antool is a web collection of information on paid or free Design
+              and Development tools
+            </p>
+            <div class="awesometools-searchbar">
+              <form class="awesometools-form">
+                <input
+                  class="awesometools-searchinput"
+                  type="text"
+                  placeholder="find more than 430+ tools..."
+                />
+                <button class="awesometools-searchbutton" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="awesometools-picture">
             <img
-              class="populartools-logo"
-              src="./src/img/figma.svg"
-              alt="Figma"
+              class="awesometools-img"
+              src="./src/img/awesometools-img.svg"
+              alt="illustration"
             />
           </div>
-          <h3 class="populartools-title">FIGMA</h3>
-          <h4 class="populartools-subtitle">Free</h4>
-          <p class="populartools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </section>
+        <section class="populartools">
+          <h2 class="populartools-maintitle">Most Popular Tools</h2>
+          <p class="populartools-mainsubtitle">
+            Tools for the best Designers and Developers most popularly used in
+            the world
           </p>
-          <a class="populartools-visit" href="#">Visit</a>
-        </article>
-        <article class="populartools-article">
-          <div class="populartools-div">
+          <article class="populartools-article populartools-article-container">
+            <div class="populartools-div">
+              <img
+                class="populartools-logo"
+                src="./src/img/figma.svg"
+                alt="Figma"
+              />
+            </div>
+            <h3 class="populartools-title">FIGMA</h3>
+            <h4 class="populartools-subtitle">Free</h4>
+            <p class="populartools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="populartools-visit" href="#">Visit</a>
+          </article>
+          <article class="populartools-article">
+            <div class="populartools-div">
+              <img
+                class="populartools-logo"
+                src="./src/img/sketch.svg"
+                alt="Sketch"
+              />
+            </div>
+            <h3 class="populartools-title">Sketch</h3>
+            <h4 class="populartools-subtitle">Trial & Paid</h4>
+            <p class="populartools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="populartools-visit" href="#">Visit</a>
+          </article>
+          <article class="populartools-article">
+            <div class="populartools-div">
+              <img
+                class="populartools-logo"
+                src="./src/img/visual-studio-code.svg"
+                alt="Visual Studio Code"
+              />
+            </div>
+            <h3 class="populartools-title">Visual Studio Code</h3>
+            <h4 class="populartools-subtitle">Free</h4>
+            <p class="populartools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="populartools-visit" href="#">Visit</a>
+          </article>
+          <article class="populartools-article">
+            <div class="populartools-div">
+              <img
+                class="populartools-logo"
+                src="./src/img/notion.svg"
+                alt="Notion"
+              />
+            </div>
+            <h3 class="populartools-title">Notion</h3>
+            <h4 class="populartools-subtitle">Free & Paid</h4>
+            <p class="populartools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="populartools-visit" href="#">Visit</a>
+          </article>
+          <article class="populartools-article">
+            <div class="populartools-div">
+              <img
+                class="populartools-logo"
+                src="./src/img/slack.svg"
+                alt="Slack"
+              />
+            </div>
+            <h3 class="populartools-title">Slack</h3>
+            <h4 class="populartools-subtitle">Free & Paid</h4>
+            <p class="populartools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="populartools-visit" href="#">Visit</a>
+          </article>
+          <article class="populartools-article">
+            <div class="populartools-div">
+              <img
+                class="populartools-logo"
+                src="./src/img/invision.svg"
+                alt="Invision"
+              />
+            </div>
+            <h3 class="populartools-title">Invision</h3>
+            <h4 class="populartools-subtitle">Free & Paid</h4>
+            <p class="populartools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="populartools-visit" href="#">Visit</a>
+          </article>
+          <button class="populartools-button">Load more</button>
+        </section>
+        <section class="trustedbrands">
+          <h2 class="trustedbrands-title">Trusted more than 150+ brand</h2>
+          <div class="trustedbrands-logo">
             <img
-              class="populartools-logo"
-              src="./src/img/sketch.svg"
-              alt="Sketch"
+              class="trustedbrands-img"
+              src="./src/img/microsoft.svg"
+              alt="Microsoft"
             />
           </div>
-          <h3 class="populartools-title">Sketch</h3>
-          <h4 class="populartools-subtitle">Trial & Paid</h4>
-          <p class="populartools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <a class="populartools-visit" href="#">Visit</a>
-        </article>
-        <article class="populartools-article">
-          <div class="populartools-div">
+          <div class="trustedbrands-logo">
             <img
-              class="populartools-logo"
-              src="./src/img/visual-studio-code.svg"
-              alt="Visual Studio Code"
+              class="trustedbrands-img"
+              src="./src/img/google.svg"
+              alt="Google"
             />
           </div>
-          <h3 class="populartools-title">Visual Studio Code</h3>
-          <h4 class="populartools-subtitle">Free</h4>
-          <p class="populartools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <a class="populartools-visit" href="#">Visit</a>
-        </article>
-        <article class="populartools-article">
-          <div class="populartools-div">
+          <div class="trustedbrands-logo">
             <img
-              class="populartools-logo"
-              src="./src/img/notion.svg"
-              alt="Notion"
-            />
-          </div>
-          <h3 class="populartools-title">Notion</h3>
-          <h4 class="populartools-subtitle">Free & Paid</h4>
-          <p class="populartools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <a class="populartools-visit" href="#">Visit</a>
-        </article>
-        <article class="populartools-article">
-          <div class="populartools-div">
-            <img
-              class="populartools-logo"
-              src="./src/img/slack.svg"
+              class="trustedbrands-img"
+              src="./src/img/slack-bw.svg"
               alt="Slack"
             />
           </div>
-          <h3 class="populartools-title">Slack</h3>
-          <h4 class="populartools-subtitle">Free & Paid</h4>
-          <p class="populartools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <a class="populartools-visit" href="#">Visit</a>
-        </article>
-        <article class="populartools-article">
-          <div class="populartools-div">
+          <div class="trustedbrands-logo">
             <img
-              class="populartools-logo"
-              src="./src/img/invision.svg"
-              alt="Invision"
+              class="trustedbrands-img"
+              src="./src/img/wordpress.svg"
+              alt="Wordpress"
             />
           </div>
-          <h3 class="populartools-title">Invision</h3>
-          <h4 class="populartools-subtitle">Free & Paid</h4>
-          <p class="populartools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </section>
+        <section class="newcomertools">
+          <h2 class="newcomertools-title">Newcomer Tools</h2>
+          <p class="newcomertools-subtitle">
+            Wow! see the latest update of the most recommended tools from
+            reliable designers and developers
           </p>
-          <a class="populartools-visit" href="#">Visit</a>
-        </article>
-        <button class="populartools-button">Load more</button>
-      </section>
-      <section class="trustedbrands">
-        <h2 class="trustedbrands-title">Trusted more than 150+ brand</h2>
-        <div class="trustedbrands-logo">
-          <img
-            class="trustedbrands-img"
-            src="./src/img/microsoft.svg"
-            alt="Microsoft"
-          />
-        </div>
-        <div class="trustedbrands-logo">
-          <img
-            class="trustedbrands-img"
-            src="./src/img/google.svg"
-            alt="Google"
-          />
-        </div>
-        <div class="trustedbrands-logo">
-          <img
-            class="trustedbrands-img"
-            src="./src/img/slack-bw.svg"
-            alt="Slack"
-          />
-        </div>
-        <div class="trustedbrands-logo">
-          <img
-            class="trustedbrands-img"
-            src="./src/img/wordpress.svg"
-            alt="Wordpress"
-          />
-        </div>
-      </section>
-      <section class="newcomertools">
-        <h2 class="newcomertools-title">Newcomer Tools</h2>
-        <p class="newcomertools-subtitle">
-          Wow! see the latest update of the most recommended tools from reliable
-          designers and developers
-        </p>
-        <a class="newcomertools-exploremore" href="#">Explore more</a>
-        <article class="newcomertools-article">
-          <div class="newcomertools-div">
+          <a class="newcomertools-exploremore" href="#">Explore more</a>
+          <article class="newcomertools-article">
+            <div class="newcomertools-div">
+              <img
+                class="newcomertools-logo"
+                src="./src/img/zeplin.svg"
+                alt="Zeplin"
+              />
+            </div>
+            <h3 class="newcomertools-title">Zeplin</h3>
+            <h4 class="newcomertools-subtitle">Free & Paid</h4>
+            <p class="newcomertools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="newcomertools-visit" href="#">Visit</a>
+          </article>
+          <article class="newcomertools-article">
+            <div class="newcomertools-div">
+              <img
+                class="newcomertools-logo"
+                src="./src/img/phpstorm.svg"
+                alt="PHPStorm"
+              />
+            </div>
+            <h3 class="newcomertools-title">PHPStorm</h3>
+            <h4 class="newcomertools-subtitle">Free</h4>
+            <p class="newcomertools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="newcomertools-visit" href="#">Visit</a>
+          </article>
+          <article class="newcomertools-article">
+            <div class="newcomertools-div">
+              <img
+                class="newcomertools-logo"
+                src="./src/img/toolbox.svg"
+                alt="Toolbox"
+              />
+            </div>
+            <h3 class="newcomertools-title">Toolbox</h3>
+            <h4 class="newcomertools-subtitle">Free</h4>
+            <p class="newcomertools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="newcomertools-visit" href="#">Visit</a>
+          </article>
+          <article class="newcomertools-article">
+            <div class="newcomertools-div">
+              <img
+                class="newcomertools-logo"
+                src="./src/img/procreate.svg"
+                alt="Procreate"
+              />
+            </div>
+            <h3 class="newcomertools-title">Procreate</h3>
+            <h4 class="newcomertools-subtitle">Paid</h4>
+            <p class="newcomertools-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a class="newcomertools-visit" href="#">Visit</a>
+          </article>
+        </section>
+        <section class="quote">
+          <div class="quote-photo">
             <img
-              class="newcomertools-logo"
-              src="./src/img/zeplin.svg"
-              alt="Zeplin"
+              class="quote-img"
+              src="./src/img/man.webp"
+              alt="Ronald Richards"
             />
           </div>
-          <h3 class="newcomertools-title">Zeplin</h3>
-          <h4 class="newcomertools-subtitle">Free & Paid</h4>
-          <p class="newcomertools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <h3 class="quote-name">Ronald Richards</h3>
+          <p class="quote-job">Product Manager</p>
+          <p class="quote-text">
+            Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
+            reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla
+            velit labore occaecat do deserunt Lorem magna officia incididunt
+            consectetur amet. Sunt consectetur veniam minim ex commodo sint non.
+            Occaecat aute officia excepteur non laboris id qui ad.
           </p>
-          <a class="newcomertools-visit" href="#">Visit</a>
-        </article>
-        <article class="newcomertools-article">
-          <div class="newcomertools-div">
-            <img
-              class="newcomertools-logo"
-              src="./src/img/phpstorm.svg"
-              alt="PHPStorm"
+        </section>
+        <section class="contributor">
+          <h2 class="contributor-title">Become a contributor?</h2>
+          <p class="contributor-subtitle">
+            Join us and get tips & tricks to become a great Designer and
+            Developer
+          </p>
+          <form class="contributor-form">
+            <input
+              class="contributor-searchinput"
+              type="email"
+              placeholder="Enter your email..."
             />
-          </div>
-          <h3 class="newcomertools-title">PHPStorm</h3>
-          <h4 class="newcomertools-subtitle">Free</h4>
-          <p class="newcomertools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <a class="newcomertools-visit" href="#">Visit</a>
-        </article>
-        <article class="newcomertools-article">
-          <div class="newcomertools-div">
-            <img
-              class="newcomertools-logo"
-              src="./src/img/toolbox.svg"
-              alt="Toolbox"
-            />
-          </div>
-          <h3 class="newcomertools-title">Toolbox</h3>
-          <h4 class="newcomertools-subtitle">Free</h4>
-          <p class="newcomertools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <a class="newcomertools-visit" href="#">Visit</a>
-        </article>
-        <article class="newcomertools-article">
-          <div class="newcomertools-div">
-            <img
-              class="newcomertools-logo"
-              src="./src/img/procreate.svg"
-              alt="Procreate"
-            />
-          </div>
-          <h3 class="newcomertools-title">Procreate</h3>
-          <h4 class="newcomertools-subtitle">Paid</h4>
-          <p class="newcomertools-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <a class="newcomertools-visit" href="#">Visit</a>
-        </article>
-      </section>
-      <section class="quote">
-        <div class="quote-photo">
-          <img
-            class="quote-img"
-            src="./src/img/man.webp"
-            alt="Ronald Richards"
-          />
-        </div>
-        <h3 class="quote-name">Ronald Richards</h3>
-        <p class="quote-job">Product Manager</p>
-        <p class="quote-text">
-          Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
-          reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla
-          velit labore occaecat do deserunt Lorem magna officia incididunt
-          consectetur amet. Sunt consectetur veniam minim ex commodo sint non.
-          Occaecat aute officia excepteur non laboris id qui ad.
-        </p>
-      </section>
-      <section class="contributor">
-        <h2 class="contributor-title">Become a contributor?</h2>
-        <p class="contributor-subtitle">
-          Join us and get tips & tricks to become a great Designer and Developer
-        </p>
-        <form class="contributor-form">
-          <input
-            class="contributor-searchinput"
-            type="email"
-            placeholder="find more than 430+ tools..."
-          />
-          <button class="contributor-button" type="button">Search</button>
-        </form>
-      </section>
+            <button class="contributor-button" type="button">Join Us</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer-container">
         <div class="logo">
           <img src="./src/img/logo.svg" alt="Logo" />
         </div>
-        <a href="#" class="name">antools.</a>
+        <a href="#" class="logo-name">antools.</a>
         <p class="footer-info-copyright">Copyright 2021. Antools</p>
         <p class="footer-info-text">
           Antool is a web collection of information on paid or free Design and
           Development tools
         </p>
         <div class="footer-contact">
-          <h3 class="footer-contact-title">Contact Us</h3>
+          <h3 class="footer-contact-title footer-title">Contact Us</h3>
           <address class="footer-contact">
             <ul class="footer-contact-list">
-              <li class="footer-contact-item">
+              <li class="footer-contact-item footer-item">
                 <a href="tel:+621987463" class="footer-contact-phonenumper"
                   >+621987463</a
                 >
               </li>
-              <li class="footer-contact-item">
+              <li class="footer-contact-item footer-item">
                 <p class="footer-contact-homeaddress">M Building, No.10 A</p>
               </li>
-              <li class="footer-contact-item">
+              <li class="footer-contact-item footer-item">
                 <p class="footer-contact-email">antools@awesome.com</p>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer-categories">
-          <h3 class="footer-categories-title">Categories</h3>
+          <h3 class="footer-categories-title footer-title">Categories</h3>
           <ul class="footer-categories-list">
-            <li class="footer-categories-item">Design</li>
-            <li class="footer-categories-item">Development</li>
+            <li class="footer-categories-item footer-item">Design</li>
+            <li class="footer-categories-item footer-item">Development</li>
           </ul>
         </div>
         <div class="footer-company-info">
-          <h3 class="footer-company-info-title">Company Info</h3>
+          <h3 class="footer-company-info-title footer-title">Company Info</h3>
           <ul class="footer-company-info-list">
-            <li class="footer-company-info-item">About Us</li>
-            <li class="footer-company-info-item">Our Partners</li>
-            <li class="footer-company-info-item">Blog</li>
+            <li class="footer-company-info-item footer-item">About Us</li>
+            <li class="footer-company-info-item footer-item">Our Partners</li>
+            <li class="footer-company-info-item footer-item">Blog</li>
           </ul>
         </div>
       </div>

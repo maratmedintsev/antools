@@ -19,6 +19,7 @@ button {
   outline: 0;
   font-size: inherit;
 }
-ul {
+ul,
+ol {
   list-style: none;
 }
