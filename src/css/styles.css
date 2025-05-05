@@ -219,9 +219,9 @@ body {
 .populartools-div {
   height: 48px;
   margin-bottom: 16px;
-  display: flex;
-  align-items: center;
   gap: 12px;
+  display: flex;
+  flex-direction: column;
 }
 .populartools-logo {
   max-height: 100%;
@@ -266,70 +266,211 @@ body {
   cursor: pointer;
   display: inline;
 }
+.trustedbrands {
+  text-align: center;
+  padding: 200px 20px;
+}
 .trustedbrands-title {
   color: var(--colorTextTitleTrustedbrands);
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 55px;
 }
+.trustedbrands-logo {
+  display: inline-block;
+  margin-right: 107px;
+  max-width: 200px;
+  max-height: 51px;
+}
+.newcomertools {
+  padding: 80px 20px;
+  text-align: center;
+}
+
 .newcomertools-title {
   color: var(--colorTextTitle);
   font-weight: 500;
   font-size: 48px;
+  margin-bottom: 30px;
 }
 .newcomertools-subtitle {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.67;
+  margin-bottom: 60px;
 }
 .newcomertools-exploremore {
   color: white;
   font-weight: 500;
   font-size: 18px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 15px 40px;
+  background-color: var(--colorTextButton);
+}
+.newcomertools-article {
+  border-radius: 15px;
+  display: inline-block;
+  text-align: left;
+  margin: 24px;
+  padding: 40px;
+  width: 280px;
+  vertical-align: top;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.newcomertools-div {
+  text-align: center;
+  margin-bottom: 15px;
 }
 .newcomertools-title {
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 3px;
 }
 .newcomertools-subtitle {
   color: var(--colorToolsSubtitleNoHover);
   font-size: 18px;
+  margin-bottom: 30px;
 }
 .newcomertools-description {
   font-size: 14px;
   line-height: 2.14;
+  margin-bottom: 30px;
 }
 .newcomertools-visit {
   font-weight: 600;
+}
+.newcomertools-visit:hover {
+  background-color: #ff6e30;
+  border: none;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.quote {
+  text-align: center;
+  padding: 60px 20px;
+}
+.quote-photo {
+  margin-bottom: 20px;
+}
+.quote-img {
+  width: 400px;
+  height: 500px;
 }
 .quote-name {
   color: var(--colorTextQuoteTitle);
   font-weight: 500;
   font-size: 26px;
   letter-spacing: 1.5%;
+  margin: 20px 0 10px;
 }
 .quote-job {
   color: var(--colorTextQuoteSubtitle);
+  margin-bottom: 16px;
 }
 .quote-text {
   font-family: var(--fontQuote);
   font-size: 14px;
   color: var(--colorTextHover);
   line-height: 2.14;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contributor {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contributor-title {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.contributor-subtitle {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.contributor-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contributor-searchinput {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 280px;
+  color: #ffffff;
+  outline: none;
+}
+
+.contributor-button {
+  background-color: #ff6a3a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.footer {
+  padding: 60px 20px;
+  font-size: 14px;
+  margin-right: 115px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.logo img {
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+.logo-name {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 .footer-info-copyright {
   color: var(--colorTextTitle);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.79;
+  margin-bottom: 20px;
 }
-.footer-title {
-  color: var(--colorTextTitle);
-  font-weight: 500;
-  font-size: 20px;
+.footer-info-text {
+  max-width: 260px;
 }
 .footer-item {
-  font-weight: 500;
+  margin-bottom: 8px;
 }
 .footer-contact-item {
   font-style: normal;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer a:hover {
+  text-decoration: underline;
 }
