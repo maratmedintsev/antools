@@ -175,6 +175,7 @@ body {
   text-align: center;
   margin-top: 60px;
 }
+
 .populartools-maintitle {
   color: var(--colorTextTitle);
   font-weight: 500;
@@ -216,6 +217,12 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
+.populartools-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
 .populartools-div {
   height: 48px;
   margin-bottom: 16px;
@@ -227,6 +234,11 @@ body {
   max-height: 100%;
   width: 40px;
   height: 40px;
+}
+.populartools-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .populartools-title {
   color: var(--colorTextTitleNoHover);
@@ -240,10 +252,39 @@ body {
   margin-bottom: 12px;
 }
 .populartools-description {
+  margin-bottom: 30px;
+}
+.populartools-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.populartools-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
   margin-bottom: 16px;
+}
+.icon-svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.icon-svg:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 .populartools-visit {
   font-weight: 600;
+  margin-top: 30px;
+  align-self: flex-end;
+  margin-right: 33px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
 }
 .populartools-visit:hover {
   background-color: #ff6e30;
